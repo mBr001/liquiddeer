@@ -8,7 +8,7 @@
 int main()
 {
     printf("***************************************\n");
-    cout<<"\tLiquidDeer "<<LD_VER<<" "<<CODENAME<<endl;
+    printf("\tLiquidDeer %s %s\n", LD_VER, CODENAME);
     cout<<"***************************************"<<endl;
 
     warning();

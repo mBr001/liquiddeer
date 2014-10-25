@@ -24,7 +24,7 @@ set(SRC_LIST source/deer.cpp
              source/gumbo/util.c
              source/gumbo/vector.c
              )
-set(CMAKE_C_FLAGS "-std=c99 -Wall") 
+set(CMAKE_C_FLAGS "-std=c99 -Wall")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH}  ${CMAKE_SOURCE_DIR}/source/cmake/Modules/)
 
 FIND_PACKAGE(CURL REQUIRED)
