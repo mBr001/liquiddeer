@@ -1,4 +1,3 @@
-#include <string>
 #include "sync.h"
 #include "config.h"
 
@@ -9,10 +8,9 @@ int main()
 {
     printf("***************************************\n");
     printf("\tLiquidDeer %s %s\n", LD_VER, CODENAME);
-    cout<<"***************************************"<<endl;
+    printf("***************************************\n");
 
     warning();
     synchro();
-
 
 }
