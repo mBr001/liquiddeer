@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stsdc/programy/liquid/source/deer.c
+interact.h
+/home/stsdc/programy/liquid/source/interact.h
+
+/home/stsdc/programy/liquid/source/interact.h
+stdbool.h
+-
+

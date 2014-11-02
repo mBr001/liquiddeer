@@ -1,0 +1,1 @@
+/home/stsdc/programy/liquid/CMakeFiles/liquiddeer.dir

@@ -1,0 +1,5 @@
+project(gumbo)
+set(CMAKE_C_FLAGS "-std=c99 -Wall")
+set(SOURCES "attribute.c" "char_ref.c" "error.c" "parser.c" "string_buffer.c" "string_piece.c" "tag.c" "tokenizer.c" "utf8.c" "util.c" "vector.c")
+set(HEADERS "attribute.h" "char_ref.h" "error.h" "gumbo.h" "insertion_mode.h" "parser.h" "string_buffer.h" "string_piece.h" "token_type.h" "tokenizer_states.h" "tokenizer.h" "utf8.h" "util.h" "vector.h")
+add_library(gumbo ${SOURCES} ${HEADERS})

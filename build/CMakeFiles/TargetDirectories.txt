@@ -1,1 +1,3 @@
+/home/stsdc/programy/liquid/build/source/gumbo/CMakeFiles/gumbo.dir
 /home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir
+/home/stsdc/programy/liquid/build/source/pugi/CMakeFiles/pugi.dir

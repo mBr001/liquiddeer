@@ -1,6 +1,6 @@
 #ifndef SYNC_H
 #define SYNC_H
-#include <iostream>
+#include <stdio.h>
 #include <fstream>
 #include <string>
 #include <curl/curl.h>

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libpugi.a  CMakeFiles/pugi.dir/pugixml.cpp.o
+/usr/bin/ranlib libpugi.a

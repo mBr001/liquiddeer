@@ -179,6 +179,21 @@ CURL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurl.so
 //The directory containing a CMake configuration file for CUR.
 CUR_DIR:PATH=CUR_DIR-NOTFOUND
 
+//Path to a file.
+GLIBCONFIG_INCLUDE_DIR:PATH=/usr/lib/x86_64-linux-gnu/glib-2.0/include
+
+//Path to a file.
+GLIB_CONFIG_INCLUDE_DIR:PATH=GLIB_CONFIG_INCLUDE_DIR-NOTFOUND
+
+//Path to a file.
+GLIB_INCLUDE_DIR:PATH=/usr/include/glib-2.0
+
+//Path to a library.
+GLIB_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+
+//Path to a library.
+GLIB_LIBRARY:FILEPATH=GLIB_LIBRARY-NOTFOUND
+
 //The directory containing a CMake configuration file for JANSSON.
 JANSSON_DIR:PATH=JANSSON_DIR-NOTFOUND
 
@@ -191,11 +206,23 @@ JANSSON_LIBRARY:FILEPATH=/usr/lib/libjansson.so
 //The directory containing a CMake configuration file for Jansson.
 Jansson_DIR:PATH=Jansson_DIR-NOTFOUND
 
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/stsdc/programy/liquid/build
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/stsdc/programy/liquid
+
+//Value Computed by CMake
+gumbo_BINARY_DIR:STATIC=/home/stsdc/programy/liquid/build/source/gumbo
+
+//Dependencies for target
+gumbo_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gumbo_SOURCE_DIR:STATIC=/home/stsdc/programy/liquid/source/gumbo
 
 //The directory containing a CMake configuration file for jansson.
 jansson_DIR:PATH=jansson_DIR-NOTFOUND
@@ -208,6 +235,18 @@ liquiddeer_BINARY_DIR:STATIC=/home/stsdc/programy/liquid/build
 
 //Value Computed by CMake
 liquiddeer_SOURCE_DIR:STATIC=/home/stsdc/programy/liquid
+
+//Value Computed by CMake
+pugi_BINARY_DIR:STATIC=/home/stsdc/programy/liquid/build/source/pugi
+
+//Dependencies for target
+pugi_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+pugi_SOURCE_DIR:STATIC=/home/stsdc/programy/liquid/source/pugi
+
+//Dependencies for target
+pugixml_LIB_DEPENDS:STATIC=
 
 
 ########################
@@ -300,7 +339,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=1
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -347,6 +386,76 @@ CURL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 CURL_LIBRARY-ADVANCED:INTERNAL=1
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/local/include][v7.37.0()]
+//Details about finding GLIB
+FIND_PACKAGE_MESSAGE_DETAILS_GLIB:INTERNAL=[/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include][/usr/lib/x86_64-linux-gnu/libglib-2.0.so][v()]
 //Details about finding Jansson
 FIND_PACKAGE_MESSAGE_DETAILS_Jansson:INTERNAL=[/usr/lib/libjansson.so][/usr/local/include][v()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.26()]
+//ADVANCED property for variable: GLIB_INCLUDE_DIR
+GLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLIB_LIBRARY
+GLIB_LIBRARY-ADVANCED:INTERNAL=1
+PC_GLIB_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PC_GLIB_CFLAGS_I:INTERNAL=
+PC_GLIB_CFLAGS_OTHER:INTERNAL=
+PC_GLIB_FOUND:INTERNAL=1
+PC_GLIB_INCLUDEDIR:INTERNAL=/usr/include
+PC_GLIB_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PC_GLIB_LDFLAGS:INTERNAL=-lglib-2.0
+PC_GLIB_LDFLAGS_OTHER:INTERNAL=
+PC_GLIB_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+PC_GLIB_LIBRARIES:INTERNAL=glib-2.0
+PC_GLIB_LIBRARY_DIRS:INTERNAL=
+PC_GLIB_LIBS:INTERNAL=
+PC_GLIB_LIBS_L:INTERNAL=
+PC_GLIB_LIBS_OTHER:INTERNAL=
+PC_GLIB_LIBS_PATHS:INTERNAL=
+PC_GLIB_PREFIX:INTERNAL=/usr
+PC_GLIB_STATIC_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PC_GLIB_STATIC_CFLAGS_I:INTERNAL=
+PC_GLIB_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_GLIB_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PC_GLIB_STATIC_LDFLAGS:INTERNAL=-pthread;-lglib-2.0;-lrt;-lpcre
+PC_GLIB_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+PC_GLIB_STATIC_LIBDIR:INTERNAL=
+PC_GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;rt;pcre
+PC_GLIB_STATIC_LIBRARY_DIRS:INTERNAL=
+PC_GLIB_STATIC_LIBS:INTERNAL=
+PC_GLIB_STATIC_LIBS_L:INTERNAL=
+PC_GLIB_STATIC_LIBS_OTHER:INTERNAL=
+PC_GLIB_STATIC_LIBS_PATHS:INTERNAL=
+PC_GLIB_VERSION:INTERNAL=2.32.4
+PC_GLIB_glib-2.0_INCLUDEDIR:INTERNAL=
+PC_GLIB_glib-2.0_LIBDIR:INTERNAL=
+PC_GLIB_glib-2.0_PREFIX:INTERNAL=
+PC_GLIB_glib-2.0_VERSION:INTERNAL=
+PKGCONFIG_GLIB_CFLAGS:INTERNAL=
+PKGCONFIG_GLIB_CFLAGS_I:INTERNAL=
+PKGCONFIG_GLIB_CFLAGS_OTHER:INTERNAL=
+PKGCONFIG_GLIB_FOUND:INTERNAL=
+PKGCONFIG_GLIB_INCLUDEDIR:INTERNAL=
+PKGCONFIG_GLIB_LIBDIR:INTERNAL=
+PKGCONFIG_GLIB_LIBS:INTERNAL=
+PKGCONFIG_GLIB_LIBS_L:INTERNAL=
+PKGCONFIG_GLIB_LIBS_OTHER:INTERNAL=
+PKGCONFIG_GLIB_LIBS_PATHS:INTERNAL=
+PKGCONFIG_GLIB_PREFIX:INTERNAL=
+PKGCONFIG_GLIB_STATIC_CFLAGS:INTERNAL=
+PKGCONFIG_GLIB_STATIC_CFLAGS_I:INTERNAL=
+PKGCONFIG_GLIB_STATIC_CFLAGS_OTHER:INTERNAL=
+PKGCONFIG_GLIB_STATIC_LIBDIR:INTERNAL=
+PKGCONFIG_GLIB_STATIC_LIBS:INTERNAL=
+PKGCONFIG_GLIB_STATIC_LIBS_L:INTERNAL=
+PKGCONFIG_GLIB_STATIC_LIBS_OTHER:INTERNAL=
+PKGCONFIG_GLIB_STATIC_LIBS_PATHS:INTERNAL=
+PKGCONFIG_GLIB_VERSION:INTERNAL=
+PKGCONFIG_GLIB_glib-._INCLUDEDIR:INTERNAL=
+PKGCONFIG_GLIB_glib-._LIBDIR:INTERNAL=
+PKGCONFIG_GLIB_glib-._PREFIX:INTERNAL=
+PKGCONFIG_GLIB_glib-._VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_checked_PC_GLIB:INTERNAL=1
+__pkg_config_checked_PKGCONFIG_GLIB:INTERNAL=1
 

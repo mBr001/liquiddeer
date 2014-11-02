@@ -111,485 +111,79 @@ liquiddeer/fast:
 	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/build
 .PHONY : liquiddeer/fast
 
-source/auth.o: source/auth.cpp.o
-.PHONY : source/auth.o
+#=============================================================================
+# Target rules for targets named pugi
 
-# target to build an object file
-source/auth.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/auth.cpp.o
-.PHONY : source/auth.cpp.o
+# Build rule for target.
+pugi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pugi
+.PHONY : pugi
 
-source/auth.i: source/auth.cpp.i
-.PHONY : source/auth.i
+# fast build rule for target.
+pugi/fast:
+	$(MAKE) -f source/pugi/CMakeFiles/pugi.dir/build.make source/pugi/CMakeFiles/pugi.dir/build
+.PHONY : pugi/fast
 
-# target to preprocess a source file
-source/auth.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/auth.cpp.i
-.PHONY : source/auth.cpp.i
+#=============================================================================
+# Target rules for targets named gumbo
 
-source/auth.s: source/auth.cpp.s
-.PHONY : source/auth.s
+# Build rule for target.
+gumbo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gumbo
+.PHONY : gumbo
 
-# target to generate assembly for a file
-source/auth.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/auth.cpp.s
-.PHONY : source/auth.cpp.s
+# fast build rule for target.
+gumbo/fast:
+	$(MAKE) -f source/gumbo/CMakeFiles/gumbo.dir/build.make source/gumbo/CMakeFiles/gumbo.dir/build
+.PHONY : gumbo/fast
 
-source/config.o: source/config.cpp.o
-.PHONY : source/config.o
-
-# target to build an object file
-source/config.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/config.cpp.o
-.PHONY : source/config.cpp.o
-
-source/config.i: source/config.cpp.i
-.PHONY : source/config.i
-
-# target to preprocess a source file
-source/config.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/config.cpp.i
-.PHONY : source/config.cpp.i
-
-source/config.s: source/config.cpp.s
-.PHONY : source/config.s
-
-# target to generate assembly for a file
-source/config.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/config.cpp.s
-.PHONY : source/config.cpp.s
-
-source/deer.o: source/deer.cpp.o
+source/deer.o: source/deer.c.o
 .PHONY : source/deer.o
 
 # target to build an object file
-source/deer.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/deer.cpp.o
-.PHONY : source/deer.cpp.o
+source/deer.c.o:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/deer.c.o
+.PHONY : source/deer.c.o
 
-source/deer.i: source/deer.cpp.i
+source/deer.i: source/deer.c.i
 .PHONY : source/deer.i
 
 # target to preprocess a source file
-source/deer.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/deer.cpp.i
-.PHONY : source/deer.cpp.i
+source/deer.c.i:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/deer.c.i
+.PHONY : source/deer.c.i
 
-source/deer.s: source/deer.cpp.s
+source/deer.s: source/deer.c.s
 .PHONY : source/deer.s
 
 # target to generate assembly for a file
-source/deer.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/deer.cpp.s
-.PHONY : source/deer.cpp.s
-
-source/gumbo/attribute.o: source/gumbo/attribute.c.o
-.PHONY : source/gumbo/attribute.o
-
-# target to build an object file
-source/gumbo/attribute.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/attribute.c.o
-.PHONY : source/gumbo/attribute.c.o
-
-source/gumbo/attribute.i: source/gumbo/attribute.c.i
-.PHONY : source/gumbo/attribute.i
-
-# target to preprocess a source file
-source/gumbo/attribute.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/attribute.c.i
-.PHONY : source/gumbo/attribute.c.i
-
-source/gumbo/attribute.s: source/gumbo/attribute.c.s
-.PHONY : source/gumbo/attribute.s
-
-# target to generate assembly for a file
-source/gumbo/attribute.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/attribute.c.s
-.PHONY : source/gumbo/attribute.c.s
-
-source/gumbo/char_ref.o: source/gumbo/char_ref.c.o
-.PHONY : source/gumbo/char_ref.o
-
-# target to build an object file
-source/gumbo/char_ref.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/char_ref.c.o
-.PHONY : source/gumbo/char_ref.c.o
-
-source/gumbo/char_ref.i: source/gumbo/char_ref.c.i
-.PHONY : source/gumbo/char_ref.i
-
-# target to preprocess a source file
-source/gumbo/char_ref.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/char_ref.c.i
-.PHONY : source/gumbo/char_ref.c.i
-
-source/gumbo/char_ref.s: source/gumbo/char_ref.c.s
-.PHONY : source/gumbo/char_ref.s
-
-# target to generate assembly for a file
-source/gumbo/char_ref.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/char_ref.c.s
-.PHONY : source/gumbo/char_ref.c.s
-
-source/gumbo/error.o: source/gumbo/error.c.o
-.PHONY : source/gumbo/error.o
-
-# target to build an object file
-source/gumbo/error.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/error.c.o
-.PHONY : source/gumbo/error.c.o
-
-source/gumbo/error.i: source/gumbo/error.c.i
-.PHONY : source/gumbo/error.i
-
-# target to preprocess a source file
-source/gumbo/error.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/error.c.i
-.PHONY : source/gumbo/error.c.i
-
-source/gumbo/error.s: source/gumbo/error.c.s
-.PHONY : source/gumbo/error.s
-
-# target to generate assembly for a file
-source/gumbo/error.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/error.c.s
-.PHONY : source/gumbo/error.c.s
-
-source/gumbo/parser.o: source/gumbo/parser.c.o
-.PHONY : source/gumbo/parser.o
-
-# target to build an object file
-source/gumbo/parser.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/parser.c.o
-.PHONY : source/gumbo/parser.c.o
-
-source/gumbo/parser.i: source/gumbo/parser.c.i
-.PHONY : source/gumbo/parser.i
-
-# target to preprocess a source file
-source/gumbo/parser.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/parser.c.i
-.PHONY : source/gumbo/parser.c.i
-
-source/gumbo/parser.s: source/gumbo/parser.c.s
-.PHONY : source/gumbo/parser.s
-
-# target to generate assembly for a file
-source/gumbo/parser.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/parser.c.s
-.PHONY : source/gumbo/parser.c.s
-
-source/gumbo/string_buffer.o: source/gumbo/string_buffer.c.o
-.PHONY : source/gumbo/string_buffer.o
-
-# target to build an object file
-source/gumbo/string_buffer.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/string_buffer.c.o
-.PHONY : source/gumbo/string_buffer.c.o
-
-source/gumbo/string_buffer.i: source/gumbo/string_buffer.c.i
-.PHONY : source/gumbo/string_buffer.i
-
-# target to preprocess a source file
-source/gumbo/string_buffer.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/string_buffer.c.i
-.PHONY : source/gumbo/string_buffer.c.i
-
-source/gumbo/string_buffer.s: source/gumbo/string_buffer.c.s
-.PHONY : source/gumbo/string_buffer.s
-
-# target to generate assembly for a file
-source/gumbo/string_buffer.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/string_buffer.c.s
-.PHONY : source/gumbo/string_buffer.c.s
-
-source/gumbo/string_piece.o: source/gumbo/string_piece.c.o
-.PHONY : source/gumbo/string_piece.o
-
-# target to build an object file
-source/gumbo/string_piece.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/string_piece.c.o
-.PHONY : source/gumbo/string_piece.c.o
-
-source/gumbo/string_piece.i: source/gumbo/string_piece.c.i
-.PHONY : source/gumbo/string_piece.i
-
-# target to preprocess a source file
-source/gumbo/string_piece.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/string_piece.c.i
-.PHONY : source/gumbo/string_piece.c.i
-
-source/gumbo/string_piece.s: source/gumbo/string_piece.c.s
-.PHONY : source/gumbo/string_piece.s
-
-# target to generate assembly for a file
-source/gumbo/string_piece.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/string_piece.c.s
-.PHONY : source/gumbo/string_piece.c.s
-
-source/gumbo/tag.o: source/gumbo/tag.c.o
-.PHONY : source/gumbo/tag.o
-
-# target to build an object file
-source/gumbo/tag.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/tag.c.o
-.PHONY : source/gumbo/tag.c.o
-
-source/gumbo/tag.i: source/gumbo/tag.c.i
-.PHONY : source/gumbo/tag.i
-
-# target to preprocess a source file
-source/gumbo/tag.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/tag.c.i
-.PHONY : source/gumbo/tag.c.i
-
-source/gumbo/tag.s: source/gumbo/tag.c.s
-.PHONY : source/gumbo/tag.s
-
-# target to generate assembly for a file
-source/gumbo/tag.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/tag.c.s
-.PHONY : source/gumbo/tag.c.s
-
-source/gumbo/tokenizer.o: source/gumbo/tokenizer.c.o
-.PHONY : source/gumbo/tokenizer.o
-
-# target to build an object file
-source/gumbo/tokenizer.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/tokenizer.c.o
-.PHONY : source/gumbo/tokenizer.c.o
-
-source/gumbo/tokenizer.i: source/gumbo/tokenizer.c.i
-.PHONY : source/gumbo/tokenizer.i
-
-# target to preprocess a source file
-source/gumbo/tokenizer.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/tokenizer.c.i
-.PHONY : source/gumbo/tokenizer.c.i
-
-source/gumbo/tokenizer.s: source/gumbo/tokenizer.c.s
-.PHONY : source/gumbo/tokenizer.s
-
-# target to generate assembly for a file
-source/gumbo/tokenizer.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/tokenizer.c.s
-.PHONY : source/gumbo/tokenizer.c.s
-
-source/gumbo/utf8.o: source/gumbo/utf8.c.o
-.PHONY : source/gumbo/utf8.o
-
-# target to build an object file
-source/gumbo/utf8.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/utf8.c.o
-.PHONY : source/gumbo/utf8.c.o
-
-source/gumbo/utf8.i: source/gumbo/utf8.c.i
-.PHONY : source/gumbo/utf8.i
-
-# target to preprocess a source file
-source/gumbo/utf8.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/utf8.c.i
-.PHONY : source/gumbo/utf8.c.i
-
-source/gumbo/utf8.s: source/gumbo/utf8.c.s
-.PHONY : source/gumbo/utf8.s
-
-# target to generate assembly for a file
-source/gumbo/utf8.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/utf8.c.s
-.PHONY : source/gumbo/utf8.c.s
-
-source/gumbo/util.o: source/gumbo/util.c.o
-.PHONY : source/gumbo/util.o
-
-# target to build an object file
-source/gumbo/util.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/util.c.o
-.PHONY : source/gumbo/util.c.o
-
-source/gumbo/util.i: source/gumbo/util.c.i
-.PHONY : source/gumbo/util.i
-
-# target to preprocess a source file
-source/gumbo/util.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/util.c.i
-.PHONY : source/gumbo/util.c.i
-
-source/gumbo/util.s: source/gumbo/util.c.s
-.PHONY : source/gumbo/util.s
-
-# target to generate assembly for a file
-source/gumbo/util.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/util.c.s
-.PHONY : source/gumbo/util.c.s
-
-source/gumbo/vector.o: source/gumbo/vector.c.o
-.PHONY : source/gumbo/vector.o
-
-# target to build an object file
-source/gumbo/vector.c.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/vector.c.o
-.PHONY : source/gumbo/vector.c.o
-
-source/gumbo/vector.i: source/gumbo/vector.c.i
-.PHONY : source/gumbo/vector.i
-
-# target to preprocess a source file
-source/gumbo/vector.c.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/vector.c.i
-.PHONY : source/gumbo/vector.c.i
-
-source/gumbo/vector.s: source/gumbo/vector.c.s
-.PHONY : source/gumbo/vector.s
-
-# target to generate assembly for a file
-source/gumbo/vector.c.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/gumbo/vector.c.s
-.PHONY : source/gumbo/vector.c.s
-
-source/interact.o: source/interact.cpp.o
+source/deer.c.s:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/deer.c.s
+.PHONY : source/deer.c.s
+
+source/interact.o: source/interact.c.o
 .PHONY : source/interact.o
 
 # target to build an object file
-source/interact.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.cpp.o
-.PHONY : source/interact.cpp.o
+source/interact.c.o:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.c.o
+.PHONY : source/interact.c.o
 
-source/interact.i: source/interact.cpp.i
+source/interact.i: source/interact.c.i
 .PHONY : source/interact.i
 
 # target to preprocess a source file
-source/interact.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.cpp.i
-.PHONY : source/interact.cpp.i
+source/interact.c.i:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.c.i
+.PHONY : source/interact.c.i
 
-source/interact.s: source/interact.cpp.s
+source/interact.s: source/interact.c.s
 .PHONY : source/interact.s
 
 # target to generate assembly for a file
-source/interact.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.cpp.s
-.PHONY : source/interact.cpp.s
-
-source/parse.o: source/parse.cpp.o
-.PHONY : source/parse.o
-
-# target to build an object file
-source/parse.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/parse.cpp.o
-.PHONY : source/parse.cpp.o
-
-source/parse.i: source/parse.cpp.i
-.PHONY : source/parse.i
-
-# target to preprocess a source file
-source/parse.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/parse.cpp.i
-.PHONY : source/parse.cpp.i
-
-source/parse.s: source/parse.cpp.s
-.PHONY : source/parse.s
-
-# target to generate assembly for a file
-source/parse.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/parse.cpp.s
-.PHONY : source/parse.cpp.s
-
-source/pugi/pugixml.o: source/pugi/pugixml.cpp.o
-.PHONY : source/pugi/pugixml.o
-
-# target to build an object file
-source/pugi/pugixml.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/pugi/pugixml.cpp.o
-.PHONY : source/pugi/pugixml.cpp.o
-
-source/pugi/pugixml.i: source/pugi/pugixml.cpp.i
-.PHONY : source/pugi/pugixml.i
-
-# target to preprocess a source file
-source/pugi/pugixml.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/pugi/pugixml.cpp.i
-.PHONY : source/pugi/pugixml.cpp.i
-
-source/pugi/pugixml.s: source/pugi/pugixml.cpp.s
-.PHONY : source/pugi/pugixml.s
-
-# target to generate assembly for a file
-source/pugi/pugixml.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/pugi/pugixml.cpp.s
-.PHONY : source/pugi/pugixml.cpp.s
-
-source/sync.o: source/sync.cpp.o
-.PHONY : source/sync.o
-
-# target to build an object file
-source/sync.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/sync.cpp.o
-.PHONY : source/sync.cpp.o
-
-source/sync.i: source/sync.cpp.i
-.PHONY : source/sync.i
-
-# target to preprocess a source file
-source/sync.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/sync.cpp.i
-.PHONY : source/sync.cpp.i
-
-source/sync.s: source/sync.cpp.s
-.PHONY : source/sync.s
-
-# target to generate assembly for a file
-source/sync.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/sync.cpp.s
-.PHONY : source/sync.cpp.s
-
-source/track.o: source/track.cpp.o
-.PHONY : source/track.o
-
-# target to build an object file
-source/track.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.cpp.o
-.PHONY : source/track.cpp.o
-
-source/track.i: source/track.cpp.i
-.PHONY : source/track.i
-
-# target to preprocess a source file
-source/track.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.cpp.i
-.PHONY : source/track.cpp.i
-
-source/track.s: source/track.cpp.s
-.PHONY : source/track.s
-
-# target to generate assembly for a file
-source/track.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.cpp.s
-.PHONY : source/track.cpp.s
-
-source/xml.o: source/xml.cpp.o
-.PHONY : source/xml.o
-
-# target to build an object file
-source/xml.cpp.o:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/xml.cpp.o
-.PHONY : source/xml.cpp.o
-
-source/xml.i: source/xml.cpp.i
-.PHONY : source/xml.i
-
-# target to preprocess a source file
-source/xml.cpp.i:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/xml.cpp.i
-.PHONY : source/xml.cpp.i
-
-source/xml.s: source/xml.cpp.s
-.PHONY : source/xml.s
-
-# target to generate assembly for a file
-source/xml.cpp.s:
-	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/xml.cpp.s
-.PHONY : source/xml.cpp.s
+source/interact.c.s:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.c.s
+.PHONY : source/interact.c.s
 
 # Help Target
 help:
@@ -600,66 +194,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... liquiddeer"
 	@echo "... rebuild_cache"
-	@echo "... source/auth.o"
-	@echo "... source/auth.i"
-	@echo "... source/auth.s"
-	@echo "... source/config.o"
-	@echo "... source/config.i"
-	@echo "... source/config.s"
+	@echo "... pugi"
+	@echo "... gumbo"
 	@echo "... source/deer.o"
 	@echo "... source/deer.i"
 	@echo "... source/deer.s"
-	@echo "... source/gumbo/attribute.o"
-	@echo "... source/gumbo/attribute.i"
-	@echo "... source/gumbo/attribute.s"
-	@echo "... source/gumbo/char_ref.o"
-	@echo "... source/gumbo/char_ref.i"
-	@echo "... source/gumbo/char_ref.s"
-	@echo "... source/gumbo/error.o"
-	@echo "... source/gumbo/error.i"
-	@echo "... source/gumbo/error.s"
-	@echo "... source/gumbo/parser.o"
-	@echo "... source/gumbo/parser.i"
-	@echo "... source/gumbo/parser.s"
-	@echo "... source/gumbo/string_buffer.o"
-	@echo "... source/gumbo/string_buffer.i"
-	@echo "... source/gumbo/string_buffer.s"
-	@echo "... source/gumbo/string_piece.o"
-	@echo "... source/gumbo/string_piece.i"
-	@echo "... source/gumbo/string_piece.s"
-	@echo "... source/gumbo/tag.o"
-	@echo "... source/gumbo/tag.i"
-	@echo "... source/gumbo/tag.s"
-	@echo "... source/gumbo/tokenizer.o"
-	@echo "... source/gumbo/tokenizer.i"
-	@echo "... source/gumbo/tokenizer.s"
-	@echo "... source/gumbo/utf8.o"
-	@echo "... source/gumbo/utf8.i"
-	@echo "... source/gumbo/utf8.s"
-	@echo "... source/gumbo/util.o"
-	@echo "... source/gumbo/util.i"
-	@echo "... source/gumbo/util.s"
-	@echo "... source/gumbo/vector.o"
-	@echo "... source/gumbo/vector.i"
-	@echo "... source/gumbo/vector.s"
 	@echo "... source/interact.o"
 	@echo "... source/interact.i"
 	@echo "... source/interact.s"
-	@echo "... source/parse.o"
-	@echo "... source/parse.i"
-	@echo "... source/parse.s"
-	@echo "... source/pugi/pugixml.o"
-	@echo "... source/pugi/pugixml.i"
-	@echo "... source/pugi/pugixml.s"
-	@echo "... source/sync.o"
-	@echo "... source/sync.i"
-	@echo "... source/sync.s"
-	@echo "... source/track.o"
-	@echo "... source/track.i"
-	@echo "... source/track.s"
-	@echo "... source/xml.o"
-	@echo "... source/xml.i"
-	@echo "... source/xml.s"
 .PHONY : help
 
 

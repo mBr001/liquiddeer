@@ -1,8 +1,9 @@
 #ifndef AUTH_H
 #define AUTH_H
-#include <iostream>
+#include <stdio.h>
 #include <curl/curl.h>
-#include <string>
+#include <string.h>
+#include <glib.h>
 #include <vector>
 #include "parse.h"
 using namespace std;

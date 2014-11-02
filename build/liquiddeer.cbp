@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="liquiddeer" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\source\;CMake Files\source\cmake\;CMake Files\source\cmake\Modules\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/stsdc/programy/liquid/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="liquiddeer">
+         <Option output="/home/stsdc/programy/liquid/build/liquiddeer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/stsdc/programy/liquid/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/stsdc/programy/liquid/gumbo" />
+            <Add directory="/home/stsdc/programy/liquid/pugi" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 liquiddeer" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="liquiddeer/fast">
+         <Option output="/home/stsdc/programy/liquid/build/liquiddeer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/stsdc/programy/liquid/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/stsdc/programy/liquid/gumbo" />
+            <Add directory="/home/stsdc/programy/liquid/pugi" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 liquiddeer/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/stsdc/programy/liquid/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/stsdc/programy/liquid/source/config.cpp">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/deer.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/interact.cpp">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/pugi/pugixml.cpp">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/config.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/interact.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/pugi/pugixml.hpp">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/cmake/Modules/FindJansson.cmake">
+          <Option virtualFolder="CMake Files\source\cmake\Modules\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/cmake/Modules/FindGlib.cmake">
+          <Option virtualFolder="CMake Files\source\cmake\Modules\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

@@ -56,10 +56,11 @@ CMAKE_BINARY_DIR = /home/stsdc/programy/liquid/build
 # Target rules for target CMakeFiles/liquiddeer.dir
 
 # All Build rule for target.
-CMakeFiles/liquiddeer.dir/all:
+CMakeFiles/liquiddeer.dir/all: source/pugi/CMakeFiles/pugi.dir/all
+CMakeFiles/liquiddeer.dir/all: source/gumbo/CMakeFiles/gumbo.dir/all
 	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/depend
 	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/stsdc/programy/liquid/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/stsdc/programy/liquid/build/CMakeFiles  12 13
 	@echo "Built target liquiddeer"
 .PHONY : CMakeFiles/liquiddeer.dir/all
 
@@ -69,7 +70,7 @@ all: CMakeFiles/liquiddeer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/liquiddeer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/liquiddeer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 0
 .PHONY : CMakeFiles/liquiddeer.dir/rule
@@ -85,6 +86,106 @@ CMakeFiles/liquiddeer.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/liquiddeer.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory source/pugi
+
+# Convenience name for "all" pass in the directory.
+source/pugi/all: source/pugi/CMakeFiles/pugi.dir/all
+.PHONY : source/pugi/all
+
+# Convenience name for "clean" pass in the directory.
+source/pugi/clean: source/pugi/CMakeFiles/pugi.dir/clean
+.PHONY : source/pugi/clean
+
+# Convenience name for "preinstall" pass in the directory.
+source/pugi/preinstall:
+.PHONY : source/pugi/preinstall
+
+#=============================================================================
+# Target rules for target source/pugi/CMakeFiles/pugi.dir
+
+# All Build rule for target.
+source/pugi/CMakeFiles/pugi.dir/all:
+	$(MAKE) -f source/pugi/CMakeFiles/pugi.dir/build.make source/pugi/CMakeFiles/pugi.dir/depend
+	$(MAKE) -f source/pugi/CMakeFiles/pugi.dir/build.make source/pugi/CMakeFiles/pugi.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/stsdc/programy/liquid/build/CMakeFiles  14
+	@echo "Built target pugi"
+.PHONY : source/pugi/CMakeFiles/pugi.dir/all
+
+# Include target in all.
+all: source/pugi/CMakeFiles/pugi.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+source/pugi/CMakeFiles/pugi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 source/pugi/CMakeFiles/pugi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 0
+.PHONY : source/pugi/CMakeFiles/pugi.dir/rule
+
+# Convenience name for target.
+pugi: source/pugi/CMakeFiles/pugi.dir/rule
+.PHONY : pugi
+
+# clean rule for target.
+source/pugi/CMakeFiles/pugi.dir/clean:
+	$(MAKE) -f source/pugi/CMakeFiles/pugi.dir/build.make source/pugi/CMakeFiles/pugi.dir/clean
+.PHONY : source/pugi/CMakeFiles/pugi.dir/clean
+
+# clean rule for target.
+clean: source/pugi/CMakeFiles/pugi.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory source/gumbo
+
+# Convenience name for "all" pass in the directory.
+source/gumbo/all: source/gumbo/CMakeFiles/gumbo.dir/all
+.PHONY : source/gumbo/all
+
+# Convenience name for "clean" pass in the directory.
+source/gumbo/clean: source/gumbo/CMakeFiles/gumbo.dir/clean
+.PHONY : source/gumbo/clean
+
+# Convenience name for "preinstall" pass in the directory.
+source/gumbo/preinstall:
+.PHONY : source/gumbo/preinstall
+
+#=============================================================================
+# Target rules for target source/gumbo/CMakeFiles/gumbo.dir
+
+# All Build rule for target.
+source/gumbo/CMakeFiles/gumbo.dir/all:
+	$(MAKE) -f source/gumbo/CMakeFiles/gumbo.dir/build.make source/gumbo/CMakeFiles/gumbo.dir/depend
+	$(MAKE) -f source/gumbo/CMakeFiles/gumbo.dir/build.make source/gumbo/CMakeFiles/gumbo.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/stsdc/programy/liquid/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11
+	@echo "Built target gumbo"
+.PHONY : source/gumbo/CMakeFiles/gumbo.dir/all
+
+# Include target in all.
+all: source/gumbo/CMakeFiles/gumbo.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+source/gumbo/CMakeFiles/gumbo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 source/gumbo/CMakeFiles/gumbo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stsdc/programy/liquid/build/CMakeFiles 0
+.PHONY : source/gumbo/CMakeFiles/gumbo.dir/rule
+
+# Convenience name for target.
+gumbo: source/gumbo/CMakeFiles/gumbo.dir/rule
+.PHONY : gumbo
+
+# clean rule for target.
+source/gumbo/CMakeFiles/gumbo.dir/clean:
+	$(MAKE) -f source/gumbo/CMakeFiles/gumbo.dir/build.make source/gumbo/CMakeFiles/gumbo.dir/clean
+.PHONY : source/gumbo/CMakeFiles/gumbo.dir/clean
+
+# clean rule for target.
+clean: source/gumbo/CMakeFiles/gumbo.dir/clean
 .PHONY : clean
 
 #=============================================================================
