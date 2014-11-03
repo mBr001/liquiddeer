@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/liquiddeer.dir/source/deer.c.o CMakeFiles/liquiddeer.dir/source/interact.c.o  -o liquiddeer -rdynamic -ljansson -lcurl -lglib-2.0 source/pugi/libpugi.a source/gumbo/libgumbo.a 
+/usr/bin/c++   -g    CMakeFiles/liquiddeer.dir/source/deer.c.o CMakeFiles/liquiddeer.dir/source/config.c.o CMakeFiles/liquiddeer.dir/source/interact.c.o  -o ../bin-dbg/liquiddeer -rdynamic -ljansson -lcurl -lglib-2.0 -lxml2 source/pugi/libpugi.a source/gumbo/libgumbo.a 

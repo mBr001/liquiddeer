@@ -13,9 +13,7 @@ int main()
         printf("***************************************\n");
        warning();
         // yesman();
-       if (check_config() == true){
-           printf("Cool");
-       }
+
 
 
 

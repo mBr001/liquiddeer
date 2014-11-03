@@ -137,6 +137,30 @@ gumbo/fast:
 	$(MAKE) -f source/gumbo/CMakeFiles/gumbo.dir/build.make source/gumbo/CMakeFiles/gumbo.dir/build
 .PHONY : gumbo/fast
 
+source/config.o: source/config.c.o
+.PHONY : source/config.o
+
+# target to build an object file
+source/config.c.o:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/config.c.o
+.PHONY : source/config.c.o
+
+source/config.i: source/config.c.i
+.PHONY : source/config.i
+
+# target to preprocess a source file
+source/config.c.i:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/config.c.i
+.PHONY : source/config.c.i
+
+source/config.s: source/config.c.s
+.PHONY : source/config.s
+
+# target to generate assembly for a file
+source/config.c.s:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/config.c.s
+.PHONY : source/config.c.s
+
 source/deer.o: source/deer.c.o
 .PHONY : source/deer.o
 
@@ -196,6 +220,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... pugi"
 	@echo "... gumbo"
+	@echo "... source/config.o"
+	@echo "... source/config.i"
+	@echo "... source/config.s"
 	@echo "... source/deer.o"
 	@echo "... source/deer.i"
 	@echo "... source/deer.s"

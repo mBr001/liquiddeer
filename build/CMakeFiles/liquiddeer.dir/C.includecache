@@ -9,6 +9,8 @@
 /home/stsdc/programy/liquid/source/config.h
 glib.h
 -
+stdbool.h
+-
 
 /home/stsdc/programy/liquid/source/interact.c
 stdio.h

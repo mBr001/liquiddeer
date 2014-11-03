@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="gumbo" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\source\;CMake Files\source\gumbo\;CMake Files\source\cmake\;CMake Files\source\cmake\Modules\;CMake Files\source\pugi\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/stsdc/programy/liquid/build/source/gumbo" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gumbo">
+         <Option output="/home/stsdc/programy/liquid/build/source/gumbo/libgumbo.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/stsdc/programy/liquid/build/source/gumbo" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 gumbo" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gumbo/fast">
+         <Option output="/home/stsdc/programy/liquid/build/source/gumbo/libgumbo.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/stsdc/programy/liquid/build/source/gumbo" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 gumbo/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/gumbo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/attribute.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/char_ref.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/error.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/parser.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/string_buffer.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/string_piece.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/tag.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/tokenizer.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/utf8.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/util.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/vector.c">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/attribute.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/char_ref.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/error.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/gumbo.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/insertion_mode.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/parser.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/string_buffer.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/string_piece.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/token_type.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/tokenizer.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/tokenizer_states.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/utf8.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/util.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/vector.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\source\gumbo\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/gumbo/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\source\gumbo\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/cmake/Modules/FindJansson.cmake">
+          <Option virtualFolder="CMake Files\source\cmake\Modules\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/cmake/Modules/FindGlib.cmake">
+          <Option virtualFolder="CMake Files\source\cmake\Modules\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/pugi/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\source\pugi\" />
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/pugi/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\source\pugi\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

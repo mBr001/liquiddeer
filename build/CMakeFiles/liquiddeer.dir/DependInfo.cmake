@@ -4,6 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
+  "/home/stsdc/programy/liquid/source/config.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/config.c.o"
   "/home/stsdc/programy/liquid/source/deer.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/deer.c.o"
   "/home/stsdc/programy/liquid/source/interact.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/interact.c.o"
   )
@@ -17,6 +18,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/libxml2"
   "/usr/local/include"
   "/usr/include/glib-2.0"
   "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
