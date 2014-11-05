@@ -8,8 +8,9 @@
 //    GString *setting, answer;
 //    settings = g_array_new(TRUE, TRUE, sizeof(GString *));
 //    settings = read_config();
+//    g_string_append(setting, g_array_index(settings, GString *, 3));
+
 //    //check settings if ask question
-//    setting = g_array_index(settings, GString *, 3);
 //    if(setting->str == "0"){
 //        g_array_free(settings, TRUE);
 //        return false;

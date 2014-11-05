@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 project(liquiddeer)
 
-add_subdirectory(source/pugi)
 add_subdirectory(source/gumbo)
 
 set(SRC_LIST "source/deer.c"
@@ -43,4 +42,4 @@ endif()
 include_directories(${CURL_INCLUDE_DIRS} ${JANSSON_INCLUDE_DIRS} ${GLIB_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME} ${SRC_LIST} ${HEADERS})
 
-target_link_libraries(${PROJECT_NAME} ${JANSSON_LIBRARIES} ${CURL_LIBRARIES} ${GLIB_LIBRARIES} ${LIBXML2_LIBRARIES} pugi gumbo)
+target_link_libraries(${PROJECT_NAME} ${JANSSON_LIBRARIES} ${CURL_LIBRARIES} ${GLIB_LIBRARIES} ${LIBXML2_LIBRARIES} gumbo)

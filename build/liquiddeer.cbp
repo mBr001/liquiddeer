@@ -5,7 +5,7 @@
       <Option title="liquiddeer" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\source\;CMake Files\source\gumbo\;CMake Files\source\cmake\;CMake Files\source\cmake\Modules\;CMake Files\source\pugi\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\source\;CMake Files\source\gumbo\;CMake Files\source\cmake\;CMake Files\source\cmake\Modules\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/stsdc/programy/liquid/build" />
@@ -63,36 +63,6 @@
             <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="pugi">
-         <Option output="/home/stsdc/programy/liquid/build/source/pugi/libpugi.a" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/stsdc/programy/liquid/build/source/pugi" />
-         <Option object_output="./" />
-         <Option type="2" />
-         <Option compiler="gcc" />
-         <Compiler>
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 pugi" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="pugi/fast">
-         <Option output="/home/stsdc/programy/liquid/build/source/pugi/libpugi.a" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/stsdc/programy/liquid/build/source/pugi" />
-         <Option object_output="./" />
-         <Option type="2" />
-         <Option compiler="gcc" />
-         <Compiler>
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 pugi/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/stsdc/programy/liquid/build/source/pugi/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="gumbo">
@@ -154,8 +124,6 @@
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/interact.c">
       </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/pugixml.cpp">
-      </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/config.h">
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/gumbo/attribute.h">
@@ -188,10 +156,6 @@
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/interact.h">
       </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/pugiconfig.hpp">
-      </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/pugixml.hpp">
-      </Unit>
       <Unit filename="/home/stsdc/programy/liquid/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
       </Unit>
@@ -206,12 +170,6 @@
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/cmake/Modules/FindGlib.cmake">
           <Option virtualFolder="CMake Files\source\cmake\Modules\" />
-      </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\source\pugi\" />
-      </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\source\pugi\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

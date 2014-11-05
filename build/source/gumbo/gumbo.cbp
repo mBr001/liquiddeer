@@ -5,7 +5,7 @@
       <Option title="gumbo" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\source\;CMake Files\source\gumbo\;CMake Files\source\cmake\;CMake Files\source\cmake\Modules\;CMake Files\source\pugi\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\source\;CMake Files\source\gumbo\;CMake Files\source\cmake\;CMake Files\source\cmake\Modules\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/stsdc/programy/liquid/build/source/gumbo" />
@@ -112,12 +112,6 @@
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/cmake/Modules/FindGlib.cmake">
           <Option virtualFolder="CMake Files\source\cmake\Modules\" />
-      </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\source\pugi\" />
-      </Unit>
-      <Unit filename="/home/stsdc/programy/liquid/source/pugi/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\source\pugi\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

@@ -112,19 +112,6 @@ liquiddeer/fast:
 .PHONY : liquiddeer/fast
 
 #=============================================================================
-# Target rules for targets named pugi
-
-# Build rule for target.
-pugi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pugi
-.PHONY : pugi
-
-# fast build rule for target.
-pugi/fast:
-	$(MAKE) -f source/pugi/CMakeFiles/pugi.dir/build.make source/pugi/CMakeFiles/pugi.dir/build
-.PHONY : pugi/fast
-
-#=============================================================================
 # Target rules for targets named gumbo
 
 # Build rule for target.
@@ -218,7 +205,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... liquiddeer"
 	@echo "... rebuild_cache"
-	@echo "... pugi"
 	@echo "... gumbo"
 	@echo "... source/config.o"
 	@echo "... source/config.i"

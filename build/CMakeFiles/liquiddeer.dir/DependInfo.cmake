@@ -12,7 +12,6 @@ SET(CMAKE_C_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/stsdc/programy/liquid/build/source/pugi/CMakeFiles/pugi.dir/DependInfo.cmake"
   "/home/stsdc/programy/liquid/build/source/gumbo/CMakeFiles/gumbo.dir/DependInfo.cmake"
   )
 

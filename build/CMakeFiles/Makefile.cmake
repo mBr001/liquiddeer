@@ -14,7 +14,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "../source/cmake/Modules/FindGlib.cmake"
   "../source/cmake/Modules/FindJansson.cmake"
   "../source/gumbo/CMakeLists.txt"
-  "../source/pugi/CMakeLists.txt"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -46,13 +45,11 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "source/pugi/CMakeFiles/CMakeDirectoryInformation.cmake"
   "source/gumbo/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/liquiddeer.dir/DependInfo.cmake"
-  "source/pugi/CMakeFiles/pugi.dir/DependInfo.cmake"
   "source/gumbo/CMakeFiles/gumbo.dir/DependInfo.cmake"
   )

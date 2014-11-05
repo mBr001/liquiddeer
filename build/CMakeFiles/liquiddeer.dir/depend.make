@@ -78,6 +78,27 @@ CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/glib-2.0/glib/gvariant
 CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/glib-2.0/glib/gversion.h
 CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/glib-2.0/glib/gversionmacros.h
 CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/glib-2.0/glib/gwin32.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/SAX.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/SAX2.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/dict.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/encoding.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/entities.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/globals.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/hash.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/list.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/parser.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/threads.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/tree.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/valid.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xlink.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlIO.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlautomata.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlerror.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlexports.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlmemory.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlregexp.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlstring.h
+CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/include/libxml2/libxml/xmlversion.h
 CMakeFiles/liquiddeer.dir/source/config.c.o: /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
 
 CMakeFiles/liquiddeer.dir/source/deer.c.o: ../source/config.h
