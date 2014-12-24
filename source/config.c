@@ -9,87 +9,109 @@ void save_config(GString *access_token, GString *uid){
     xmlNodePtr root_node = NULL;/* node pointers */
     //check if dir exists
     struct stat st = {0};
+
     GString* homedir = g_string_new(NULL);
     g_string_append(homedir, getenv("HOME"));
     g_string_append(homedir, "/.liquid");
-    printf("%s", homedir->str);
+
+    printf("\n%s", homedir->str);
+
     if (stat(homedir->str, &st) == -1) {
         mkdir(homedir->str, 0777);
         g_string_free(homedir, TRUE);
     }
-        doc = xmlNewDoc(BAD_CAST "1.0");
-        root_node = xmlNewNode(NULL, BAD_CAST "settings");
-        xmlDocSetRootElement(doc, root_node);
-        //saving access token
-        xmlNewChild(root_node, NULL, BAD_CAST "access_token", BAD_CAST access_token->str);
-        //saving user id
-        xmlNewChild(root_node, NULL, BAD_CAST "uid",BAD_CAST uid->str);
-        //retrieving default path
-        GString* default_path = g_string_new(NULL);
-        g_string_append(default_path, getenv("HOME"));
-        g_string_append(default_path, "/Music/");
-        //saving default path
-        xmlNewChild(root_node, NULL, BAD_CAST "path",BAD_CAST default_path->str);
-        //asking all this questions ?
-        xmlNewChild(root_node, NULL, BAD_CAST "path",BAD_CAST "1");
+    doc = xmlNewDoc(BAD_CAST "1.0");
+    root_node = xmlNewNode(NULL, BAD_CAST "settings");
+    xmlDocSetRootElement(doc, root_node);
+
+    //saving access token
+    xmlNewChild(root_node, NULL, BAD_CAST "access_token", BAD_CAST access_token->str);
+    //saving user id
+    xmlNewChild(root_node, NULL, BAD_CAST "uid",BAD_CAST uid->str);
+
+    //retrieving default path
+    GString* default_path = g_string_new(NULL);
+    g_string_append(default_path, getenv("HOME"));
+    g_string_append(default_path, "/Music/");
+
+    //saving default path
+    xmlNewChild(root_node, NULL, BAD_CAST "path",BAD_CAST default_path->str);
+
+    //asking all this questions ?
+    xmlNewChild(root_node, NULL, BAD_CAST "ask_question",BAD_CAST "1");
 
 
-        if (doc != NULL) {
-            xmlSaveFormatFile (path_to_config(), doc, 0);
-            xmlFreeDoc(doc);
-            g_string_free(default_path, TRUE);
-            printf("Config saved to %s", path_to_config());
-        }else{
-            printf("holy shit");
-            xmlFreeDoc(doc);
-            // Free the global variables that may have been allocated by the parser.
-            xmlCleanupParser();
-        }
-
+    if (doc != NULL) {
+        xmlSaveFormatFile (path_to_config(), doc, 0);
+        xmlFreeDoc(doc);
+        g_string_free(default_path, TRUE);
+        printf("Config saved to %s", path_to_config());
+    }else{
+        printf("holy shit");
+        xmlFreeDoc(doc);
+        // Free the global variables that may have been allocated by the parser.
+        xmlCleanupParser();
+    }
 }
 
+GArray *parse_settings(xmlDocPtr doc, xmlNodePtr cur) {
+    GArray *parsed_things;
+    parsed_things = g_array_new (TRUE, TRUE, sizeof (xmlChar*));
+    xmlChar *access_token=NULL, *uid=NULL, *path=NULL, *ask=NULL, *bee=NULL;
+    cur = cur->xmlChildrenNode;
+    while (cur != NULL) {
+        if ((!xmlStrcmp(cur->name, (const xmlChar *)"access_token"))) {
+            access_token = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
+            g_array_append_val(parsed_things, access_token);
 
-// GArray * read_config(){
-//     GArray *settings;
-//     settings = g_array_new (TRUE, TRUE, sizeof (GString *));
-//     xmlChar *value;
-//     xmlDocPtr doc;
-//     xmlNodePtr cur;
-//     doc = xmlParseFile(path_to_config());
-//     cur = xmlDocGetRootElement(doc);
+//            xmlFree(access_token);
+        }
+        if ((!xmlStrcmp(cur->name, (const xmlChar *)"uid"))) {
+            uid = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
+            g_array_append_val(parsed_things, uid);
 
-//     check_config(doc, cur);
-//     while (cur != NULL) {
+//            printf("uid: %s\n", uid);
+//            xmlFree(uid);
+        }
+        if ((!xmlStrcmp(cur->name, (const xmlChar *)"path"))) {
+            path = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
+            g_array_append_val(parsed_things, path);
 
-//     if ((!xmlStrcmp(cur->name, (const xmlChar *)"access_token"))) {
-//                 value = xmlGetProp(cur, "value");
-//                 printf("uri: %s\n", value);
-//                 xmlFree(value);
-//             }
-//             cur = cur->next;
-//     }
-////     //reading token
-////     xml_node ac_to=doc.child("access_token");
-////     *access_token->str = *ac_to.attribute("value").value();
-////     g_array_append_val(settings, access_token);
+//            printf("path: %s\n", path);
+//            xmlFree(path);
+        }
+        if ((!xmlStrcmp(cur->name, (const xmlChar *)"ask"))) {
+            ask = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
+            g_array_append_val(parsed_things, ask);
 
-////     //reading uid
-////     xml_node uidx=doc.child("uid");
-////     *uid->str = *uidx.attribute("value").value();
-////     g_array_append_val(settings, uid);
+//            printf("ask: %s\n", ask);
+//            xmlFree(ask);
+        }
+    cur = cur->next;
+    }
+    return parsed_things;
+}
 
-////     //reading path
-////     xml_node path_to_store_tracks=doc.child("path");
-////     *default_path_to_store->str = *path_to_store_tracks.attribute("value").value();
-////     g_array_append_val(settings, default_path_to_store);
+GArray * read_config(){
+    GArray *settings;
+    settings = g_array_new (TRUE, TRUE, sizeof (gchar *));
+    xmlDocPtr doc = NULL;
+    xmlNodePtr root = NULL;
 
-////     //reading ask_question state
-////     xml_node askx=doc.child("path");
-////     *ask_question->str = *askx.attribute("value").value();
-////     g_array_append_val(settings, ask_question);
+    doc = xmlParseFile(path_to_config());
+    root = xmlDocGetRootElement(doc);
 
-//     return settings;
-// }
+    check_config(doc, root);
+
+    while (root != NULL) {
+        if ((!xmlStrcmp(root->name, (const xmlChar *)"settings"))){
+            settings = parse_settings(doc, root);
+        }
+
+        root = root->next;
+    }
+    return settings;
+}
 
 bool check_config(xmlDocPtr doc, xmlNodePtr cur){
 
@@ -102,8 +124,8 @@ bool check_config(xmlDocPtr doc, xmlNodePtr cur){
         xmlFreeDoc(doc);
         return false;
     }
-    if (xmlStrcmp(cur->name, (const xmlChar *) "access_token")) {
-        fprintf(stderr,"document of the wrong type, root node != Tracks");
+    if (xmlStrcmp(cur->name, (const xmlChar *) "settings")) {
+        fprintf(stderr,"document of the wrong type, root node != settings");
         xmlFreeDoc(doc);
         return false;
     }

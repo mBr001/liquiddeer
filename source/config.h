@@ -7,6 +7,7 @@
 
 void save_config(GString *access_token, GString *uid);
 gchar* path_to_config();
+GArray *parse_settings (xmlDocPtr doc, xmlNodePtr cur);
 GArray *read_config();
 bool check_config(xmlDocPtr doc, xmlNodePtr cur);
 //string get_selfpath();

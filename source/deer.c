@@ -14,16 +14,7 @@ int main()
        warning();
         // yesman();
 
-//check_config(path_to_config());
-       printf("%s", path_to_config());
-//       read_config();
-       GString* access, *uid;
-       access = g_string_new(NULL);
-       uid = g_string_new(NULL);
-       g_string_append(access, "asgfafkaf");
-       g_string_append(uid, "1235345");
-    save_config(access, uid);
-
+        read_config();
 
 
 //        synchro();
