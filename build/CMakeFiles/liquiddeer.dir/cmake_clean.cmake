@@ -2,6 +2,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/liquiddeer.dir/source/deer.c.o"
   "CMakeFiles/liquiddeer.dir/source/config.c.o"
   "CMakeFiles/liquiddeer.dir/source/interact.c.o"
+  "CMakeFiles/liquiddeer.dir/source/track.c.o"
   "../bin-dbg/liquiddeer.pdb"
   "../bin-dbg/liquiddeer"
 )

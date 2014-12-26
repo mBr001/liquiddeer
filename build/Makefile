@@ -196,6 +196,30 @@ source/interact.c.s:
 	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/interact.c.s
 .PHONY : source/interact.c.s
 
+source/track.o: source/track.c.o
+.PHONY : source/track.o
+
+# target to build an object file
+source/track.c.o:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.c.o
+.PHONY : source/track.c.o
+
+source/track.i: source/track.c.i
+.PHONY : source/track.i
+
+# target to preprocess a source file
+source/track.c.i:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.c.i
+.PHONY : source/track.c.i
+
+source/track.s: source/track.c.s
+.PHONY : source/track.s
+
+# target to generate assembly for a file
+source/track.c.s:
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.c.s
+.PHONY : source/track.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,6 +239,9 @@ help:
 	@echo "... source/interact.o"
 	@echo "... source/interact.i"
 	@echo "... source/interact.s"
+	@echo "... source/track.o"
+	@echo "... source/track.i"
+	@echo "... source/track.s"
 .PHONY : help
 
 

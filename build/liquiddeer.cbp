@@ -124,6 +124,8 @@
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/interact.c">
       </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/track.c">
+      </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/config.h">
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/gumbo/attribute.h">
@@ -155,6 +157,8 @@
       <Unit filename="/home/stsdc/programy/liquid/source/gumbo/vector.h">
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/source/interact.h">
+      </Unit>
+      <Unit filename="/home/stsdc/programy/liquid/source/track.h">
       </Unit>
       <Unit filename="/home/stsdc/programy/liquid/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

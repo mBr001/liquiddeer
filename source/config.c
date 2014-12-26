@@ -57,37 +57,37 @@ void save_config(GString *access_token, GString *uid){
 GArray *parse_settings(xmlDocPtr doc, xmlNodePtr cur) {
     GArray *parsed_things;
     parsed_things = g_array_new (TRUE, TRUE, sizeof (xmlChar*));
-    xmlChar *access_token=NULL, *uid=NULL, *path=NULL, *ask=NULL, *bee=NULL;
+    xmlChar *access_token=NULL, *uid=NULL, *path=NULL, *ask=NULL;
     cur = cur->xmlChildrenNode;
     while (cur != NULL) {
         if ((!xmlStrcmp(cur->name, (const xmlChar *)"access_token"))) {
             access_token = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
             g_array_append_val(parsed_things, access_token);
-
-//            xmlFree(access_token);
+            //          don't forget to xmlFree !!!
+            //          xmlFree(access_token);
         }
         if ((!xmlStrcmp(cur->name, (const xmlChar *)"uid"))) {
             uid = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
             g_array_append_val(parsed_things, uid);
 
-//            printf("uid: %s\n", uid);
-//            xmlFree(uid);
+            //            printf("uid: %s\n", uid);
+            //            xmlFree(uid);
         }
         if ((!xmlStrcmp(cur->name, (const xmlChar *)"path"))) {
             path = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
             g_array_append_val(parsed_things, path);
 
-//            printf("path: %s\n", path);
-//            xmlFree(path);
+            //            printf("path: %s\n", path);
+            //            xmlFree(path);
         }
         if ((!xmlStrcmp(cur->name, (const xmlChar *)"ask"))) {
             ask = xmlNodeListGetString(doc, cur->xmlChildrenNode, 1);
             g_array_append_val(parsed_things, ask);
 
-//            printf("ask: %s\n", ask);
-//            xmlFree(ask);
+            //            printf("ask: %s\n", ask);
+            //            xmlFree(ask);
         }
-    cur = cur->next;
+        cur = cur->next;
     }
     return parsed_things;
 }

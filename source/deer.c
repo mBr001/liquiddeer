@@ -12,9 +12,9 @@ int main()
         printf("\tLiquidDeer %s %s\n", LD_VER, CODENAME);
         printf("***************************************\n");
        warning();
-        // yesman();
+         yesman();
 
-        read_config();
+//        read_config();
 
 
 //        synchro();

@@ -7,6 +7,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/stsdc/programy/liquid/source/config.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/config.c.o"
   "/home/stsdc/programy/liquid/source/deer.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/deer.c.o"
   "/home/stsdc/programy/liquid/source/interact.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/interact.c.o"
+  "/home/stsdc/programy/liquid/source/track.c" "/home/stsdc/programy/liquid/build/CMakeFiles/liquiddeer.dir/source/track.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

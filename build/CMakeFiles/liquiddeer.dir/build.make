@@ -118,11 +118,35 @@ CMakeFiles/liquiddeer.dir/source/interact.c.o.provides: CMakeFiles/liquiddeer.di
 
 CMakeFiles/liquiddeer.dir/source/interact.c.o.provides.build: CMakeFiles/liquiddeer.dir/source/interact.c.o
 
+CMakeFiles/liquiddeer.dir/source/track.c.o: CMakeFiles/liquiddeer.dir/flags.make
+CMakeFiles/liquiddeer.dir/source/track.c.o: ../source/track.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/stsdc/programy/liquid/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/liquiddeer.dir/source/track.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/liquiddeer.dir/source/track.c.o   -c /home/stsdc/programy/liquid/source/track.c
+
+CMakeFiles/liquiddeer.dir/source/track.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/liquiddeer.dir/source/track.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/stsdc/programy/liquid/source/track.c > CMakeFiles/liquiddeer.dir/source/track.c.i
+
+CMakeFiles/liquiddeer.dir/source/track.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/liquiddeer.dir/source/track.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/stsdc/programy/liquid/source/track.c -o CMakeFiles/liquiddeer.dir/source/track.c.s
+
+CMakeFiles/liquiddeer.dir/source/track.c.o.requires:
+.PHONY : CMakeFiles/liquiddeer.dir/source/track.c.o.requires
+
+CMakeFiles/liquiddeer.dir/source/track.c.o.provides: CMakeFiles/liquiddeer.dir/source/track.c.o.requires
+	$(MAKE) -f CMakeFiles/liquiddeer.dir/build.make CMakeFiles/liquiddeer.dir/source/track.c.o.provides.build
+.PHONY : CMakeFiles/liquiddeer.dir/source/track.c.o.provides
+
+CMakeFiles/liquiddeer.dir/source/track.c.o.provides.build: CMakeFiles/liquiddeer.dir/source/track.c.o
+
 # Object files for target liquiddeer
 liquiddeer_OBJECTS = \
 "CMakeFiles/liquiddeer.dir/source/deer.c.o" \
 "CMakeFiles/liquiddeer.dir/source/config.c.o" \
-"CMakeFiles/liquiddeer.dir/source/interact.c.o"
+"CMakeFiles/liquiddeer.dir/source/interact.c.o" \
+"CMakeFiles/liquiddeer.dir/source/track.c.o"
 
 # External object files for target liquiddeer
 liquiddeer_EXTERNAL_OBJECTS =
@@ -130,6 +154,7 @@ liquiddeer_EXTERNAL_OBJECTS =
 ../bin-dbg/liquiddeer: CMakeFiles/liquiddeer.dir/source/deer.c.o
 ../bin-dbg/liquiddeer: CMakeFiles/liquiddeer.dir/source/config.c.o
 ../bin-dbg/liquiddeer: CMakeFiles/liquiddeer.dir/source/interact.c.o
+../bin-dbg/liquiddeer: CMakeFiles/liquiddeer.dir/source/track.c.o
 ../bin-dbg/liquiddeer: CMakeFiles/liquiddeer.dir/build.make
 ../bin-dbg/liquiddeer: /usr/lib/libjansson.so
 ../bin-dbg/liquiddeer: /usr/lib/x86_64-linux-gnu/libcurl.so
@@ -147,6 +172,7 @@ CMakeFiles/liquiddeer.dir/build: ../bin-dbg/liquiddeer
 CMakeFiles/liquiddeer.dir/requires: CMakeFiles/liquiddeer.dir/source/deer.c.o.requires
 CMakeFiles/liquiddeer.dir/requires: CMakeFiles/liquiddeer.dir/source/config.c.o.requires
 CMakeFiles/liquiddeer.dir/requires: CMakeFiles/liquiddeer.dir/source/interact.c.o.requires
+CMakeFiles/liquiddeer.dir/requires: CMakeFiles/liquiddeer.dir/source/track.c.o.requires
 .PHONY : CMakeFiles/liquiddeer.dir/requires
 
 CMakeFiles/liquiddeer.dir/clean:

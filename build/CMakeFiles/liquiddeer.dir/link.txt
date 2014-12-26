@@ -1,1 +1,1 @@
-/usr/bin/cc  -std=c99 -Wall -g    CMakeFiles/liquiddeer.dir/source/deer.c.o CMakeFiles/liquiddeer.dir/source/config.c.o CMakeFiles/liquiddeer.dir/source/interact.c.o  -o ../bin-dbg/liquiddeer -rdynamic -ljansson -lcurl -lglib-2.0 -lxml2 source/gumbo/libgumbo.a 
+/usr/bin/cc  -std=c99 -Wall -g    CMakeFiles/liquiddeer.dir/source/deer.c.o CMakeFiles/liquiddeer.dir/source/config.c.o CMakeFiles/liquiddeer.dir/source/interact.c.o CMakeFiles/liquiddeer.dir/source/track.c.o  -o ../bin-dbg/liquiddeer -rdynamic -ljansson -lcurl -lglib-2.0 -lxml2 source/gumbo/libgumbo.a 

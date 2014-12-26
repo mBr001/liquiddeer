@@ -9,10 +9,10 @@ set(SRC_LIST "source/deer.c"
              "source/interact.c"
             # source/parse.cpp
 #             source/sync.cpp
-#             source/xml.cpp
-#             source/track.cpp
+#             "source/xml.cpp"
+             source/track.c
              )
-set(HEADERS #"source/config.h"
+set(HEADERS "source/config.h"
             "source/interact.h"
             )
 set(CMAKE_C_FLAGS "-std=c99 -Wall")
